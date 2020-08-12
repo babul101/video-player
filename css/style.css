@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  /* background-color: #476a6f; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: url("./images/pexels-francesco-ungaro-3181207.jpg") no-repeat
+    center/cover;
+}
+
+h1 {
+  color: #10e6e6;
+}
+
+.screen {
+  cursor: pointer;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.controls {
+  color: azure;
+  width: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.controls .btn {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.controls .fa-play {
+  color: #10e6e6;
+  font-weight: bold;
+}
+
+.controls .fa-stop {
+  color: #042b29e8;
+}
+
+.controls .fa-pause {
+  color: azure;
+}
+
+.controls .timestamp {
+  color: azure;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
